@@ -1,6 +1,0 @@
-# 08 - Matriz de confusión
-
-data_clean$pred_class <- ifelse(data_clean$pred > 0.5, 1, 0)
-
-table(Predicho = data_clean$pred_class,
-      Real = data_clean$Churn)
