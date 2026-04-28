@@ -1,5 +1,0 @@
-# 09 - Evaluación del modelo
-
-accuracy <- mean(data_clean$pred_class == data_clean$Churn)
-
-accuracy
