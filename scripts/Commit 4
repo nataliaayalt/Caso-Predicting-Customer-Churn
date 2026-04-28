@@ -1,4 +1,4 @@
-# 04 - Modelo Logit
+# Modelo logit
 
 modelo_logit <- glm(Churn ~ ., 
                     data = data_clean, 
