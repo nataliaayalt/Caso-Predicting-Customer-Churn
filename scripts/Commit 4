@@ -1,5 +1,7 @@
-# 03 - Estadísticos descriptivos
+# 04 - Modelo Logit
 
-library(psych)
+modelo_logit <- glm(Churn ~ ., 
+                    data = data_clean, 
+                    family = binomial)
 
-describe(data_clean)
+summary(modelo_logit)
