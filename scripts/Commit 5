@@ -1,0 +1,3 @@
+# 05 - Interpretación básica
+
+exp(coef(modelo_logit))
