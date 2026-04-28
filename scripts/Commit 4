@@ -1,0 +1,5 @@
+# 03 - Estadísticos descriptivos
+
+library(psych)
+
+describe(data_clean)
