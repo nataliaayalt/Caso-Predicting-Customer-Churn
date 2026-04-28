@@ -1,0 +1,3 @@
+# 07 - Predicciones
+
+data_clean$pred <- predict(modelo_logit, type = "response")
