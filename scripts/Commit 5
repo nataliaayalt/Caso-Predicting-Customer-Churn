@@ -1,3 +1,5 @@
-# 05 - Interpretación básica
+# Interpretación de coeficientes
 
-exp(coef(modelo_logit))
+odds_ratios <- exp(coef(modelo_logit))
+
+odds_ratios
