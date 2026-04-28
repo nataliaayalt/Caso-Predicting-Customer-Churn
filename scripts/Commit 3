@@ -1,5 +1,7 @@
-# 03 - Estadísticos descriptivos
+# Estadísticos descriptivos
 
 library(psych)
 
-describe(data_clean)
+desc <- describe(data_clean)
+
+desc
