@@ -1,9 +1,8 @@
-# 02 - Limpieza de datos
+# Limpieza de datos
 
 library(dplyr)
 
 data_clean <- data %>%
   na.omit()
 
-# Verificar
 summary(data_clean)
