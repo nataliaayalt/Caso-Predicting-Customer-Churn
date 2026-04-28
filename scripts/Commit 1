@@ -1,10 +1,8 @@
-# 01 - Carga de datos
+# Exploración inicial
 
 library(readxl)
-library(dplyr)
 
 data <- read_excel("data/DATA.xlsx")
 
-# Ver estructura
 str(data)
 summary(data)
