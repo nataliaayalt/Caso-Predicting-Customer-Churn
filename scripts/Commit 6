@@ -1,0 +1,7 @@
+# 06 - Gráficos exploratorios
+
+library(ggplot2)
+
+ggplot(data_clean, aes(x = Customer_Age, fill = factor(Churn))) +
+  geom_histogram(binwidth = 5) +
+  labs(title = "Distribución de edad vs churn")
