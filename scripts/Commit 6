@@ -1,0 +1,6 @@
+library(ggplot2)
+
+ggplot(data_clean, aes(x = `Customer Age (in months)`, 
+                       fill = factor(`Churn (1 = Yes, 0 = No)`))) +
+  geom_histogram(binwidth = 5) +
+  labs(title = "Edad vs Churn")
