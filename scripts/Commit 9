@@ -1,0 +1,5 @@
+# Accuracy del modelo
+
+accuracy <- mean(data_clean$pred_class == data_clean$`Churn (1 = Yes, 0 = No)`)
+
+accuracy
