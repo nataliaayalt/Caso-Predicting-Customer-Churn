@@ -1,7 +1,7 @@
 # Exploración inicial
 
 setwd("C:/Users/natalia/Analitica/Proyecto")
-getwd()
+getwd()  
 
 install.packages(c("readxl","readr","ggplot2"))
 library(readxl)
