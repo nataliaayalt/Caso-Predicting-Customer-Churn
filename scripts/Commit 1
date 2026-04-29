@@ -1,8 +1,12 @@
 # Exploración inicial
 
+setwd("C:/Users/natalia/Analitica/Proyecto")
+getwd()
+
+install.packages(c("readxl","readr","ggplot2"))
 library(readxl)
 
-data <- read_excel("data/DATA.xlsx")
+datos <- read_excel("base_modelo.xlsx", sheet = "Case Data")
 
-str(data)
-summary(data)
+str(datos)
+summary(datos)
