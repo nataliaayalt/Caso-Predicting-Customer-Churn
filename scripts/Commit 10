@@ -1,0 +1,12 @@
+# Gráfico de errores
+
+library(ggplot2)
+
+data_clean$error <- data_clean$`Churn (1 = Yes, 0 = No)` - data_clean$pred
+
+ggplot(data_clean, aes(x = pred, y = error)) +
+  geom_point(alpha = 0.5) +
+  geom_hline(yintercept = 0, color = "red") +
+  labs(title = "Errores del modelo",
+       x = "Probabilidad predicha",
+       y = "Error")
