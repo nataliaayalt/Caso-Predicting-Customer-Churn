@@ -1,6 +1,7 @@
 # Modelo logit
+colnames(data_clean)
 
-modelo_logit <- glm(Churn ~ ., 
+modelo_logit <- glm(⁠ Churn (1 = Yes, 0 = No) ⁠ ~ ., 
                     data = data_clean, 
                     family = binomial)
 
