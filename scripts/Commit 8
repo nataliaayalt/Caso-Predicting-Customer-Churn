@@ -1,0 +1,14 @@
+# Matriz de confusión
+
+data_clean$pred_class <- ifelse(data_clean$pred > 0.5, 1, 0)
+
+conf_matrix <- table(
+  Predicho = data_clean$pred_class,
+  Real = data_clean$`Churn (1 = Yes, 0 = No)`
+)
+
+conf_matrix
+
+data_clean$pred <- predict(modelo_logit, type = "response")
+
+data_clean$pred_class <- ifelse(data_clean$pred > 0.5, 1, 0)
