@@ -1,0 +1,5 @@
+# Predicciones
+
+data_clean$pred <- predict(modelo_logit, type = "response")
+
+summary(data_clean$pred)
